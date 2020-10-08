@@ -1,6 +1,0 @@
-framework module iOSPrintLib {
-  umbrella header "iOSPrintLib-umbrella.h"
-
-  export *
-  module * { export * }
-}

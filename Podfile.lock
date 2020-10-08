@@ -1,16 +1,16 @@
 PODS:
-  - iOSPrintLib (0.0.1)
+  - iOSPrintLib (0.0.2)
 
 DEPENDENCIES:
-  - iOSPrintLib (= 0.0.1)
+  - iOSPrintLib (= 0.0.2)
 
 SPEC REPOS:
   https://github.com/eifandevs/Specs.git:
     - iOSPrintLib
 
 SPEC CHECKSUMS:
-  iOSPrintLib: 35591575e9668135358c5ff178518387b3c63a35
+  iOSPrintLib: 961643f04614be17a38911028260193b2b4bc29c
 
-PODFILE CHECKSUM: c15bd691991b5fc60556728682052be8f72a32a8
+PODFILE CHECKSUM: c1dc6bb42969de3111d445c1d0d1868808a496bf
 
 COCOAPODS: 1.9.3

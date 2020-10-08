@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CF10352A8DB9D6E2F9310FE /* Pods_iOSPrintLibClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110AF37709046F67076B3F36 /* Pods_iOSPrintLibClient.framework */; };
 		A1BE4F0A252ED77800608EDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE4F09252ED77800608EDC /* AppDelegate.swift */; };
 		A1BE4F0C252ED77800608EDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE4F0B252ED77800608EDC /* SceneDelegate.swift */; };
 		A1BE4F0E252ED77800608EDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE4F0D252ED77800608EDC /* ContentView.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		110AF37709046F67076B3F36 /* Pods_iOSPrintLibClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSPrintLibClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C8A3835D045EA2721B7068 /* Pods-iOSPrintLibClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPrintLibClient.debug.xcconfig"; path = "Target Support Files/Pods-iOSPrintLibClient/Pods-iOSPrintLibClient.debug.xcconfig"; sourceTree = "<group>"; };
+		4F71EBBF62549DE655E78D25 /* Pods-iOSPrintLibClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPrintLibClient.release.xcconfig"; path = "Target Support Files/Pods-iOSPrintLibClient/Pods-iOSPrintLibClient.release.xcconfig"; sourceTree = "<group>"; };
 		A1BE4F06252ED77800608EDC /* iOSPrintLibClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPrintLibClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BE4F09252ED77800608EDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1BE4F0B252ED77800608EDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF10352A8DB9D6E2F9310FE /* Pods_iOSPrintLibClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E6D8E7A895BAB5E08581618 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17C8A3835D045EA2721B7068 /* Pods-iOSPrintLibClient.debug.xcconfig */,
+				4F71EBBF62549DE655E78D25 /* Pods-iOSPrintLibClient.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A1BE4EFD252ED77800608EDC = {
 			isa = PBXGroup;
 			children = (
 				A1BE4F08252ED77800608EDC /* iOSPrintLibClient */,
 				A1BE4F07252ED77800608EDC /* Products */,
+				5E6D8E7A895BAB5E08581618 /* Pods */,
+				A3FC5FA9A31BC08869BD396D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +92,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A3FC5FA9A31BC08869BD396D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				110AF37709046F67076B3F36 /* Pods_iOSPrintLibClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1BE4F1A252ED77C00608EDC /* Build configuration list for PBXNativeTarget "iOSPrintLibClient" */;
 			buildPhases = (
+				81A49748D6F78B78402CC280 /* [CP] Check Pods Manifest.lock */,
 				A1BE4F02252ED77800608EDC /* Sources */,
 				A1BE4F03252ED77800608EDC /* Frameworks */,
 				A1BE4F04252ED77800608EDC /* Resources */,
+				10346EB2D2C2586B5B5BEE11 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10346EB2D2C2586B5B5BEE11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSPrintLibClient/Pods-iOSPrintLibClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSPrintLibClient/Pods-iOSPrintLibClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSPrintLibClient/Pods-iOSPrintLibClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81A49748D6F78B78402CC280 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSPrintLibClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1BE4F02252ED77800608EDC /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		A1BE4F1B252ED77C00608EDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C8A3835D045EA2721B7068 /* Pods-iOSPrintLibClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +372,7 @@
 		};
 		A1BE4F1C252ED77C00608EDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F71EBBF62549DE655E78D25 /* Pods-iOSPrintLibClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
